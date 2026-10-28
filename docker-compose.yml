@@ -1,0 +1,168 @@
+services:
+  # ============================================================================
+  # 1. Base de Datos Central (PostgreSQL 16)
+  # ============================================================================
+  postgres:
+    image: postgres:16-alpine
+    container_name: sismowatch_postgres
+    restart: unless-stopped
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres_master_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-sismowatch_db}
+    volumes:
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-sismowatch_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 6
+    networks:
+      - sismowatch_net
+
+  # ============================================================================
+  # 2. Inicializador de Apache Airflow
+  # ============================================================================
+  airflow-init:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: sismowatch_airflow_init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate && \
+        airflow users create \
+          --username "${_AIRFLOW_WWW_USER_USERNAME:-admin}" \
+          --password "${_AIRFLOW_WWW_USER_PASSWORD:-AdminAirflow2026!}" \
+          --firstname Sismo \
+          --lastname Watch \
+          --role Admin \
+          --email admin@sismowatch.internal || true
+    env_file:
+      - .env
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW__CORE__FERNET_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - sismowatch_net
+
+  # ============================================================================
+  # 3. Apache Airflow Webserver (UI en puerto 8080)
+  # ============================================================================
+  airflow-webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: sismowatch_airflow_webserver
+    restart: unless-stopped
+    command: airflow webserver
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/include:/opt/airflow/include
+      - ./airflow/logs:/opt/airflow/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    networks:
+      - sismowatch_net
+
+  # ============================================================================
+  # 4. Apache Airflow Scheduler (LocalExecutor)
+  # ============================================================================
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: sismowatch_airflow_scheduler
+    restart: unless-stopped
+    command: airflow scheduler
+    env_file:
+      - .env
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/include:/opt/airflow/include
+      - ./airflow/logs:/opt/airflow/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    networks:
+      - sismowatch_net
+
+  # ============================================================================
+  # 5. Backend FastAPI (REST, JWT, RBAC, SSE)
+  # ============================================================================
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: sismowatch_api
+    restart: unless-stopped
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - .env
+    volumes:
+      - ./api:/app/api
+      - ./airflow/include:/opt/airflow/include:ro
+    environment:
+      PYTHONPATH: /app:/opt
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sismowatch_net
+
+  # ============================================================================
+  # 6. Frontend React + Vite
+  # ============================================================================
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: sismowatch_web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - sismowatch_net
+
+volumes:
+  postgres_data:
+    name: sismowatch_postgres_data
+
+networks:
+  sismowatch_net:
+    name: sismowatch_network
+    driver: bridge

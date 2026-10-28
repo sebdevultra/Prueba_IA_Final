@@ -1,0 +1,266 @@
+/* ==============================================================================
+   SismoWatch — Tema Oficial: "Azul Galáctico" (Dark Mode)
+   Diseño de alta fidelidad para monitoreo sísmico operacional en tiempo real.
+   ============================================================================== */
+
+:root {
+  /* 1. Fondo Principal (Background) */
+  --bg-primary: #0B0F19;           /* Azul medianoche profundo, espacio exterior */
+  --bg-secondary: #0F172A;         /* Azul noche intermedio para barras y secciones */
+
+  /* 2. Fondo de Superficies / Tarjetas (Surfaces) */
+  --bg-surface: #1E293B;           /* Azul grisáceo oscuro para contenedores y tarjetas */
+  --bg-card: rgba(30, 41, 59, 0.78);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --bg-surface-elevated: #243247;
+
+  /* 3. Color Primario / Acento (Galactic Blue / Electric Indigo) */
+  --accent-galactic-blue: #3B82F6; /* Azul eléctrico brillante */
+  --accent-indigo: #6366F1;        /* Índigo galáctico vibrante */
+  --gradient-galactic: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+  --gradient-hero: linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #6366F1 100%);
+
+  /* 4. Color de Brillo / Destello (Neon/Cyan Accent) */
+  --accent-cyan: #06B6D4;          /* Cian neón brillante */
+  --accent-cyan-bright: #38BDF8;   /* Cian cielo destellante */
+  --glow-cyan: 0 0 18px rgba(6, 182, 212, 0.45);
+  --glow-galactic: 0 0 25px rgba(99, 102, 241, 0.35);
+
+  /* Acentos de Alerta y Calidad */
+  --accent-emerald: #10B981;       /* Verde telemetría en vivo */
+  --accent-amber: #F59E0B;         /* Ámbar sismo moderado */
+  --accent-crimson: #EF4444;       /* Rojo sismo mayor / tsunami */
+
+  /* 5. Texto Principal y Secundario */
+  --text-main: #F8FAFC;            /* Blanco suave de alta legibilidad */
+  --text-muted: #94A3B8;           /* Gris pizarra para subtítulos y metadatos */
+  --text-dim: #64748B;             /* Gris atenuado para notas secundarias */
+
+  /* Bordes y Sombras */
+  --border-color: rgba(51, 65, 85, 0.7);
+  --border-glow: rgba(56, 189, 248, 0.4);
+  --border-active: rgba(99, 102, 241, 0.6);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.12) 0px, transparent 45%),
+    radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.14) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 60%);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, .brand-title {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism Surface Panel */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.15);
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Botones con estilo Azul Galáctico */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--gradient-galactic);
+  color: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(59, 130, 246, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.5), var(--glow-cyan);
+  opacity: 0.96;
+}
+
+.btn-secondary {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--accent-cyan-bright);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #FCA5A5;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.btn-danger:hover {
+  background: rgba(239, 68, 68, 0.28);
+  border-color: var(--accent-crimson);
+}
+
+/* Badges de Estado */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-live {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+}
+
+.badge-offline {
+  background: rgba(239, 68, 68, 0.15);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow: 0 0 10px currentColor;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+/* Campos de Formulario (Inputs / Selects) */
+.input-field {
+  background: #0F172A;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 11px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: var(--accent-cyan-bright);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+  background: #131E33;
+}
+
+/* Tablas con Estilo Galáctico */
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.custom-table th {
+  background: #0F172A;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.custom-table td {
+  padding: 13px 18px;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.35);
+  color: var(--text-main);
+}
+
+.custom-table tr:hover td {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+/* Leaflet Container & Popups */
+.leaflet-container {
+  background-color: #0B0F19 !important;
+  font-family: var(--font-body) !important;
+  border-radius: var(--radius-md);
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.96) !important;
+  color: #F8FAFC !important;
+  border: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 10px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(6, 182, 212, 0.2) !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.96) !important;
+}
+
+/* OpenStreetMap Estilo Oscuro Galáctico (100% Gratuito y Libre) */
+.dark-galactic-tiles .leaflet-tile {
+  filter: brightness(0.65) invert(1) contrast(2.8) hue-rotate(200deg) saturate(0.35) brightness(0.75);
+}
+

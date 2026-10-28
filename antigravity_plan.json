@@ -1,0 +1,121 @@
+{
+  "project_name": "sismowatch",
+  "version": "1.0.0",
+  "execution_strategy": "sequential",
+  "tasks": [
+    {
+      "id": "TASK-01-INFRA",
+      "phase": "Fase 1",
+      "description": "Configurar infraestructura base Docker, PostgreSQL con schemas y roles RBAC",
+      "target_files": [
+        "docker-compose.yml",
+        ".env.example",
+        ".gitignore",
+        "pytest.ini",
+        "db/init/01_init.sql"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "TASK-02-CORE-ETL",
+      "phase": "Fase 2",
+      "description": "Implementar clientes USGS, transformadores GeoJSON y compuertas de calidad",
+      "target_files": [
+        "airflow/include/__init__.py",
+        "airflow/include/db_utils.py",
+        "airflow/include/usgs_client.py",
+        "airflow/include/transformer.py",
+        "airflow/include/quality_engine.py"
+      ],
+      "dependencies": ["TASK-01-INFRA"]
+    },
+    {
+      "id": "TASK-03-AI-ML",
+      "phase": "Fase 3",
+      "description": "Desarrollar detección de anomalías DBSCAN/Z-Score y reportería LLM con fallback",
+      "target_files": [
+        "airflow/include/anomaly_detector.py",
+        "airflow/include/ai_reporter.py",
+        "airflow/include/prompts/daily_executive_report_v1.txt"
+      ],
+      "dependencies": ["TASK-02-CORE-ETL"]
+    },
+    {
+      "id": "TASK-04-DAGS",
+      "phase": "Fase 4",
+      "description": "Construir los 4 DAGs de orquestación en Airflow con TaskFlow y Datasets",
+      "target_files": [
+        "airflow/Dockerfile",
+        "airflow/requirements.txt",
+        "airflow/dags/dag_usgs_ingest_realtime.py",
+        "airflow/dags/dag_usgs_transform_and_quality.py",
+        "airflow/dags/dag_ai_daily_report_and_anomalies.py",
+        "airflow/dags/dag_usgs_backfill_30d.py"
+      ],
+      "dependencies": ["TASK-03-AI-ML"]
+    },
+    {
+      "id": "TASK-05-API",
+      "phase": "Fase 5",
+      "description": "Desarrollar backend FastAPI con autenticación JWT, RBAC y streaming SSE",
+      "target_files": [
+        "api/Dockerfile",
+        "api/requirements.txt",
+        "api/main.py",
+        "api/config.py",
+        "api/database.py",
+        "api/security.py",
+        "api/schemas.py",
+        "api/routers/auth.py",
+        "api/routers/dashboard.py",
+        "api/routers/reports.py",
+        "api/routers/stream.py",
+        "api/routers/admin.py"
+      ],
+      "dependencies": ["TASK-02-CORE-ETL"]
+    },
+    {
+      "id": "TASK-06-WEB",
+      "phase": "Fase 6",
+      "description": "Construir frontend React Vite con mapas Leaflet, métricas y SSE en tiempo real",
+      "target_files": [
+        "web/Dockerfile",
+        "web/package.json",
+        "web/tsconfig.json",
+        "web/vite.config.ts",
+        "web/index.html",
+        "web/src/main.tsx",
+        "web/src/App.tsx",
+        "web/src/api/client.ts",
+        "web/src/context/AuthContext.tsx",
+        "web/src/hooks/useEventStream.ts",
+        "web/src/pages/LoginPage.tsx",
+        "web/src/pages/DashboardPage.tsx",
+        "web/src/pages/ReportsPage.tsx",
+        "web/src/pages/PipelineStatusPage.tsx",
+        "web/src/components/Navbar.tsx",
+        "web/src/components/KpiCards.tsx",
+        "web/src/components/SeismicMap.tsx",
+        "web/src/components/SeismicCharts.tsx",
+        "web/src/components/LiveFeedBadge.tsx",
+        "web/src/components/QuarantineTable.tsx",
+        "web/src/components/StateWrapper.tsx"
+      ],
+      "dependencies": ["TASK-05-API"]
+    },
+    {
+      "id": "TASK-07-TESTS-SEC",
+      "phase": "Fase 7",
+      "description": "Implementar batería de pruebas unitarias pytest y documentación operativa",
+      "target_files": [
+        "tests/conftest.py",
+        "tests/test_transformations.py",
+        "tests/test_dag_integrity.py",
+        "tests/test_quality_rules.py",
+        "tests/test_api_rbac.py",
+        "README.md"
+      ],
+      "dependencies": ["TASK-04-DAGS", "TASK-05-API", "TASK-06-WEB"]
+    }
+  ]
+}
