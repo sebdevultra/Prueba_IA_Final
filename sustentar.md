@@ -139,6 +139,147 @@ docker compose up -d --build
 
 ---
 
+Viewed SKILL.md:1-439
+Listed directory sismowatch_entrega
+Viewed README.md:1-150
+Viewed docker-compose.yml:1-150
+Listed directory airflow
+Listed directory dags
+Listed directory include
+Listed directory init
+Listed directory docs
+Viewed sustentar.md:1-72
+Viewed ARQUITECTURA.md:1-160
+Viewed ARQUITECTURA.md:160-213
+Searched for "minio"
+Viewed CHANGELOG.md:1-60
+Viewed dag_usgs_ingest_realtime.py:1-60
+Viewed dag_usgs_ingest_realtime.py:60-105
+
+Evaluar la adopción de **MinIO** (servidor de almacenamiento de objetos compatible con Amazon S3) en **SismoWatch** requiere balancear dos factores: la **viabilidad técnica** (completamente alcanzable) y la **justificación arquitectónica de negocio** frente a la solución actual documentada en [docs/ARQUITECTURA.md](file:///home/Coder/Escritorio/sismowatch_entrega/docs/ARQUITECTURA.md).
+
+---
+
+### 1. Dictamen Ejecutivo de Viabilidad
+
+| Dimensión | Nivel | Diagnóstico |
+| :--- | :--- | :--- |
+| **Viabilidad Técnica** | **100% (ALTA)** | MinIO se orquesta trivialmente en Docker, se integra con Apache Airflow mediante `apache-airflow-providers-amazon` o `boto3`, y cuenta con SDK nativo en Python. |
+| **Viabilidad Operativa** | **MEDIA** | Añade un contenedor adicional (~250-400 MB de RAM), gestión de buckets, credenciales S3 y puertos adicionales (`9000` y `9001`). |
+| **Justificación de Negocio** | **HÍBRIDA** | Para la volumetría de USGS (~50 a 300 eventos cada 5 min; ~2.000 eventos/mes), PostgreSQL con `JSONB` resuelve Bronze sin sobrecosto de red. Sin embargo, MinIO es **altamente viable y recomendado** como almacén inmutable de auditoría (Data Lake landing), repositorio de artefactos/reportes y backups. |
+
+---
+
+### 2. Comparativa de Trade-offs: PostgreSQL Medallion vs. MinIO
+
+| Criterio | Arquitectura Actual (Postgres JSONB) | Con MinIO como Capa Bronze |
+| :--- | :--- | :--- |
+| **Garantías Transaccionales** | ACID completa. `ON CONFLICT DO UPDATE` atómico. | Consistencia eventual. Sobrescritura de objetos por clave S3. |
+| **Latencia de Ingesta** | Submilimétrica (< 15 ms por lote de sismos). | 40-120 ms (overhead de HTTP multipart y roundtrip de red S3). |
+| **Consultabilidad Inmediata** | Directa con sintaxis SQL nativa (`raw_payload->'properties'`). | Requiere descargar el objeto o emplear un motor federado (DuckDB/Trino). |
+| **Costos de Almacenamiento a Escala** | El almacenamiento en bloque/SSD de BD es costoso si se retienen años de GeoJSON crudos. | Muy eficiente; almacenamiento de objetos desacoplado del cómputo. |
+| **Seguridad y Permisos** | RBAC nativo por esquemas (`role_ingest`, `role_transform`). | Políticas IAM / S3 Bucket Policies + Access Keys. |
+| **Footprint de Memoria en Docker** | 0 MB extra (aprovecha la misma instancia Postgres). | +250 MB a 400 MB de RAM para el daemon MinIO + Console. |
+
+---
+
+### 3. Casos de Uso Concretos donde MinIO SÍ aporta Valor a SismoWatch
+
+Si decides incorporar MinIO, los siguientes escenarios aportan valor real sin desestabilizar la plataforma:
+
+#### A. Data Lake Inmutable (Bronze Puro como archivos GeoJSON particionados)
+En lugar de depender exclusivamente de la tabla `raw.earthquake_events_raw`, el DAG de ingesta [dag_usgs_ingest_realtime.py](file:///home/Coder/Escritorio/sismowatch_entrega/airflow/dags/dag_usgs_ingest_realtime.py) guarda el payload HTTP original como un archivo inmutable:
+- `s3://sismowatch-bronze/usgs/year=2026/month=10/day=28/feed_120000.json.gz`
+- **Ventaja**: Auditoría forense exacta sin inflar la base de datos relacional y permitiendo reprocesar cualquier ventana de tiempo histórica en el futuro.
+
+#### B. Repositorio de Artefactos y Reportes Ejecutivos (Gold Artifacts)
+Actualmente, el DAG de IA [dag_ai_daily_report_and_anomalies.py](file:///home/Coder/Escritorio/sismowatch_entrega/airflow/dags/dag_ai_daily_report_and_anomalies.py) almacena los reportes en la tabla `curated.ai_daily_reports`.
+- Con MinIO, se pueden compilar y almacenar versiones descargables en PDF, Markdown o CSV consolidados:
+  - `s3://sismowatch-artifacts/reports/2026-10-28_informe_riesgo.pdf`
+  - `s3://sismowatch-artifacts/anomalies/clusters_dbscan_20261028.png`
+- La API de FastAPI puede entregar URLs prefirmadas (`presigned URLs`) temporales para descarga directa desde el frontend.
+
+#### C. Bóveda de Backups Automatizados de PostgreSQL
+Un DAG programado de Airflow o un cron de mantenimiento puede ejecutar `pg_dump` de `sismowatch_db` y subir el archivo comprimido a `s3://sismowatch-backups/db/sismowatch_db_20261028.sql.gz` con ciclo de vida (retención de 30 días).
+
+---
+
+### 4. Blueprint Técnico de Integración
+
+Para habilitar MinIO en el ecosistema actual, los cambios requeridos son:
+
+#### 1. Servicio en [docker-compose.yml](file:///home/Coder/Escritorio/sismowatch_entrega/docker-compose.yml)
+```yaml
+  minio:
+    image: minio/minio:RELEASE.2024-05-10T01-41-38Z
+    container_name: sismowatch_minio
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-sismowatch_admin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-MinioSecretPass2026!}
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sismowatch_net
+
+volumes:
+  minio_data:
+```
+
+#### 2. Variables en `.env`
+```bash
+MINIO_ENDPOINT=http://minio:9000
+MINIO_ACCESS_KEY=sismowatch_admin
+MINIO_SECRET_KEY=MinioSecretPass2026!
+MINIO_BRONZE_BUCKET=sismowatch-bronze
+```
+
+#### 3. Tarea de subida en Airflow (`airflow/include/s3_utils.py`)
+```python
+import io
+import json
+import boto3
+from botocore.client import Config
+
+def upload_geojson_to_minio(payload: dict, bucket: str, object_key: str):
+    # cliente compatible con S3 para MinIO interno
+    s3_client = boto3.client(
+        "s3",
+        endpoint_url="http://minio:9000",
+        aws_access_key_id="sismowatch_admin",
+        aws_secret_access_key="MinioSecretPass2026!",
+        config=Config(signature_version="s3v4")
+    )
+    buffer = io.BytesIO(json.dumps(payload).encode("utf-8"))
+    s3_client.upload_fileobj(buffer, bucket, object_key)
+```
+
+---
+
+### 5. Categorización de Recomendaciones
+
+### CRÍTICO
+- **No reemplazar la capa Silver ni Gold de PostgreSQL por MinIO**: La API FastAPI y el Dashboard en tiempo real dependen de índices relacionales, SSE rápido y consultas analíticas de latencia < 30 ms. Reemplazar Postgres por consultas directas a archivos S3 degradaría la experiencia en vivo.
+
+### RECOMENDADO
+- **Adoptar MinIO bajo una arquitectura híbrida**: Mantener Postgres para las consultas operativas y usar MinIO como *Data Lake Landing Bucket* para almacenar los feeds crudos GeoJSON y los respaldos periódicos de base de datos.
+- Si se sustenta este proyecto ante evaluadores o comités, justificar que en un entorno enterprise (con estaciones sismológicas transmitiendo señales a 100 Hz), MinIO/S3 es el estándar de facto antes de procesar hacia Apache Iceberg o Parquet.
+
+### OPCIONAL
+- **Almacenar los reportes de IA y gráficas de DBSCAN en MinIO**: Permitiría descargar informes ejecutivos en PDF/PNG directamente desde el frontend mediante URLs prefirmadas.
+
+### FUTURO
+- **Migración a formato Apache Parquet / DuckDB**: Si el histórico supera millones de eventos, mover la capa Silver a archivos Parquet particionados en MinIO y consultarlos con DuckDB desde la API sin saturar la memoria de PostgreSQL.
+
 ### 8. Fuente de Datos Externa
 - **USGS Earthquake API (Servicio Geológico de los Estados Unidos)**:
   - Feed en tiempo casi real: `all_hour.geojson` (actualizado cada minuto).
