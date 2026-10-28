@@ -1,0 +1,16 @@
+[2026-10-28T13:35:06.458+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_usgs_transform_and_quality.tg_quality.evaluate_and_persist_staging dataset_triggered__2026-10-28T13:35:03.855447+00:00 [queued]>
+[2026-10-28T13:35:06.462+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_usgs_transform_and_quality.tg_quality.evaluate_and_persist_staging dataset_triggered__2026-10-28T13:35:03.855447+00:00 [queued]>
+[2026-10-28T13:35:06.462+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-10-28T13:35:06.470+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): tg_quality.evaluate_and_persist_staging> on 2026-10-28 13:35:03.855447+00:00
+[2026-10-28T13:35:06.473+0000] {standard_task_runner.py:60} INFO - Started process 1522 to run task
+[2026-10-28T13:35:06.475+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'dag_usgs_transform_and_quality', 'tg_quality.evaluate_and_persist_staging', 'dataset_triggered__2026-10-28T13:35:03.855447+00:00', '--job-id', '383', '--raw', '--subdir', 'DAGS_FOLDER/dag_usgs_transform_and_quality.py', '--cfg-path', '/tmp/tmpf2ig7yr3']
+[2026-10-28T13:35:06.476+0000] {standard_task_runner.py:88} INFO - Job 383: Subtask tg_quality.evaluate_and_persist_staging
+[2026-10-28T13:35:06.506+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_usgs_transform_and_quality.tg_quality.evaluate_and_persist_staging dataset_triggered__2026-10-28T13:35:03.855447+00:00 [running]> on host 59f7e67bb8bc
+[2026-10-28T13:35:06.568+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sismowatch_data' AIRFLOW_CTX_DAG_ID='dag_usgs_transform_and_quality' AIRFLOW_CTX_TASK_ID='tg_quality.evaluate_and_persist_staging' AIRFLOW_CTX_EXECUTION_DATE='2026-10-28T13:35:03.855447+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='dataset_triggered__2026-10-28T13:35:03.855447+00:00'
+[2026-10-28T13:35:06.580+0000] {db_utils.py:169} INFO - Capa Staging: 28 válidos persistidos. 0 inválidos retenidos en Bronze.
+[2026-10-28T13:35:06.583+0000] {db_utils.py:243} INFO - Calidad: Corrida registrada con ID dadde9d3-f47c-4e91-8e14-a8005d6a7c9e y score 100.00%
+[2026-10-28T13:35:06.583+0000] {dag_usgs_transform_and_quality.py:120} INFO - Calidad completada: 28 válidos, 0 inválidos (Score: 100.00%). Run ID: dadde9d3-f47c-4e91-8e14-a8005d6a7c9e
+[2026-10-28T13:35:06.583+0000] {python.py:201} INFO - Done. Returned value was: {'valid_count': 28, 'invalid_count': 0, 'quality_score': 100.0}
+[2026-10-28T13:35:06.630+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag_usgs_transform_and_quality, task_id=tg_quality.evaluate_and_persist_staging, execution_date=20261028T133503, start_date=20261028T133506, end_date=20261028T133506
+[2026-10-28T13:35:06.647+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-10-28T13:35:06.667+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

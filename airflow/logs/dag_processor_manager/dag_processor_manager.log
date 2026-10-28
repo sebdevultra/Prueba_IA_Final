@@ -1,0 +1,1013 @@
+[2026-10-28T13:03:34.407+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2026-10-28T13:03:34.407+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-10-28T13:03:34.408+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-10-28T13:03:34.408+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:03:34.409+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:03:36.128+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    181  0.04s             0           0
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    0           0
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              0           0
+/opt/airflow/dags/dag_usgs_backfill_30d.py                184  0.02s             0           0
+================================================================================
+[2026-10-28T13:04:06.475+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    201  0.01s             1           0  0.20s           2026-10-28T13:03:36
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.10s           2026-10-28T13:03:36
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.10s           2026-10-28T13:03:36
+/opt/airflow/dags/dag_usgs_backfill_30d.py                204  0.00s             1           0  0.17s           2026-10-28T13:03:36
+================================================================================
+[2026-10-28T13:04:36.690+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    221  0.01s             1           0  0.06s           2026-10-28T13:04:06
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:04:06
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:04:06
+/opt/airflow/dags/dag_usgs_backfill_30d.py                224  0.00s             1           0  0.06s           2026-10-28T13:04:06
+================================================================================
+[2026-10-28T13:05:06.900+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    249  0.01s             1           0  0.07s           2026-10-28T13:04:36
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:04:36
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:04:36
+/opt/airflow/dags/dag_usgs_backfill_30d.py                252  0.00s             1           0  0.06s           2026-10-28T13:04:36
+================================================================================
+[2026-10-28T13:05:37.115+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    273  0.01s             1           0  0.07s           2026-10-28T13:05:06
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:05:07
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:05:07
+/opt/airflow/dags/dag_usgs_backfill_30d.py                276  0.00s             1           0  0.06s           2026-10-28T13:05:06
+================================================================================
+[2026-10-28T13:06:07.323+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    293  0.01s             1           0  0.07s           2026-10-28T13:05:37
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:05:37
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:05:37
+/opt/airflow/dags/dag_usgs_backfill_30d.py                296  0.00s             1           0  0.06s           2026-10-28T13:05:37
+================================================================================
+[2026-10-28T13:06:37.528+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    313  0.01s             1           0  0.07s           2026-10-28T13:06:07
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:06:07
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:06:07
+/opt/airflow/dags/dag_usgs_backfill_30d.py                316  0.00s             1           0  0.06s           2026-10-28T13:06:07
+================================================================================
+[2026-10-28T13:07:07.739+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    333  0.01s             1           0  0.07s           2026-10-28T13:06:37
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:06:37
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:06:37
+/opt/airflow/dags/dag_usgs_backfill_30d.py                336  0.00s             1           0  0.06s           2026-10-28T13:06:37
+================================================================================
+[2026-10-28T13:07:37.894+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    353  0.01s             1           0  0.07s           2026-10-28T13:07:07
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:07:07
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:07:07
+/opt/airflow/dags/dag_usgs_backfill_30d.py                356  0.00s             1           0  0.06s           2026-10-28T13:07:07
+================================================================================
+[2026-10-28T13:08:08.103+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    373  0.01s             1           0  0.07s           2026-10-28T13:07:37
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:07:38
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:07:38
+/opt/airflow/dags/dag_usgs_backfill_30d.py                376  0.00s             1           0  0.06s           2026-10-28T13:07:37
+================================================================================
+[2026-10-28T13:08:35.293+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:08:35.295+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:08:38.319+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    393  0.01s             1           0  0.07s           2026-10-28T13:08:08
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:08:08
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:08:08
+/opt/airflow/dags/dag_usgs_backfill_30d.py                396  0.00s             1           0  0.06s           2026-10-28T13:08:08
+================================================================================
+[2026-10-28T13:09:08.525+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    413  0.01s             1           0  0.07s           2026-10-28T13:08:38
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:08:38
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:08:38
+/opt/airflow/dags/dag_usgs_backfill_30d.py                416  0.00s             1           0  0.06s           2026-10-28T13:08:38
+================================================================================
+[2026-10-28T13:09:38.733+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    433  0.01s             1           0  0.06s           2026-10-28T13:09:08
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:09:08
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:09:08
+/opt/airflow/dags/dag_usgs_backfill_30d.py                436  0.00s             1           0  0.06s           2026-10-28T13:09:08
+================================================================================
+[2026-10-28T13:10:08.943+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    465  0.01s             1           0  0.07s           2026-10-28T13:09:38
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:09:38
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:09:38
+/opt/airflow/dags/dag_usgs_backfill_30d.py                468  0.00s             1           0  0.06s           2026-10-28T13:09:38
+================================================================================
+[2026-10-28T13:10:39.152+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    485  0.01s             1           0  0.07s           2026-10-28T13:10:09
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:10:09
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:10:09
+/opt/airflow/dags/dag_usgs_backfill_30d.py                488  0.00s             1           0  0.06s           2026-10-28T13:10:08
+================================================================================
+[2026-10-28T13:11:09.372+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    505  0.01s             1           0  0.07s           2026-10-28T13:10:39
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:10:39
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:10:39
+/opt/airflow/dags/dag_usgs_backfill_30d.py                508  0.00s             1           0  0.06s           2026-10-28T13:10:39
+================================================================================
+[2026-10-28T13:11:39.589+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    525  0.01s             1           0  0.06s           2026-10-28T13:11:09
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:11:09
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:11:09
+/opt/airflow/dags/dag_usgs_backfill_30d.py                528  0.00s             1           0  0.06s           2026-10-28T13:11:09
+================================================================================
+[2026-10-28T13:12:09.803+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    545  0.01s             1           0  0.07s           2026-10-28T13:11:39
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:11:39
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:11:39
+/opt/airflow/dags/dag_usgs_backfill_30d.py                548  0.00s             1           0  0.06s           2026-10-28T13:11:39
+================================================================================
+[2026-10-28T13:12:40.023+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    565  0.01s             1           0  0.07s           2026-10-28T13:12:09
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:12:09
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:12:09
+/opt/airflow/dags/dag_usgs_backfill_30d.py                568  0.00s             1           0  0.06s           2026-10-28T13:12:09
+================================================================================
+[2026-10-28T13:13:10.238+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    585  0.01s             1           0  0.07s           2026-10-28T13:12:40
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:12:40
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:12:40
+/opt/airflow/dags/dag_usgs_backfill_30d.py                588  0.00s             1           0  0.06s           2026-10-28T13:12:40
+================================================================================
+[2026-10-28T13:13:35.427+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:13:35.428+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:13:40.459+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    605  0.01s             1           0  0.06s           2026-10-28T13:13:10
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:13:10
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:13:10
+/opt/airflow/dags/dag_usgs_backfill_30d.py                608  0.00s             1           0  0.06s           2026-10-28T13:13:10
+================================================================================
+[2026-10-28T13:14:10.673+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    625  0.01s             1           0  0.07s           2026-10-28T13:13:40
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:13:40
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:13:40
+/opt/airflow/dags/dag_usgs_backfill_30d.py                628  0.00s             1           0  0.06s           2026-10-28T13:13:40
+================================================================================
+[2026-10-28T13:14:40.884+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    645  0.01s             1           0  0.06s           2026-10-28T13:14:10
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:14:10
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:14:10
+/opt/airflow/dags/dag_usgs_backfill_30d.py                648  0.00s             1           0  0.06s           2026-10-28T13:14:10
+================================================================================
+[2026-10-28T13:15:11.096+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    677  0.01s             1           0  0.07s           2026-10-28T13:14:40
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:14:41
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:14:41
+/opt/airflow/dags/dag_usgs_backfill_30d.py                680  0.00s             1           0  0.06s           2026-10-28T13:14:40
+================================================================================
+[2026-10-28T13:15:41.309+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    697  0.01s             1           0  0.06s           2026-10-28T13:15:11
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:15:11
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:15:11
+/opt/airflow/dags/dag_usgs_backfill_30d.py                700  0.00s             1           0  0.06s           2026-10-28T13:15:11
+================================================================================
+[2026-10-28T13:16:11.521+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    717  0.01s             1           0  0.07s           2026-10-28T13:15:41
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:15:41
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:15:41
+/opt/airflow/dags/dag_usgs_backfill_30d.py                720  0.00s             1           0  0.06s           2026-10-28T13:15:41
+================================================================================
+[2026-10-28T13:16:41.736+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    737  0.01s             1           0  0.06s           2026-10-28T13:16:11
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:16:11
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:16:11
+/opt/airflow/dags/dag_usgs_backfill_30d.py                740  0.00s             1           0  0.06s           2026-10-28T13:16:11
+================================================================================
+[2026-10-28T13:17:11.951+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    757  0.01s             1           0  0.07s           2026-10-28T13:16:41
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:16:41
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:16:41
+/opt/airflow/dags/dag_usgs_backfill_30d.py                760  0.00s             1           0  0.06s           2026-10-28T13:16:41
+================================================================================
+[2026-10-28T13:17:42.168+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    777  0.01s             1           0  0.07s           2026-10-28T13:17:12
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:17:12
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:17:12
+/opt/airflow/dags/dag_usgs_backfill_30d.py                780  0.00s             1           0  0.06s           2026-10-28T13:17:12
+================================================================================
+[2026-10-28T13:18:12.385+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    797  0.01s             1           0  0.07s           2026-10-28T13:17:42
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:17:42
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:17:42
+/opt/airflow/dags/dag_usgs_backfill_30d.py                800  0.00s             1           0  0.06s           2026-10-28T13:17:42
+================================================================================
+[2026-10-28T13:18:35.570+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:18:35.571+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:18:42.607+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    817  0.01s             1           0  0.07s           2026-10-28T13:18:12
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:18:12
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:18:12
+/opt/airflow/dags/dag_usgs_backfill_30d.py                820  0.00s             1           0  0.06s           2026-10-28T13:18:12
+================================================================================
+[2026-10-28T13:19:12.822+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    837  0.01s             1           0  0.07s           2026-10-28T13:18:42
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:18:42
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:18:42
+/opt/airflow/dags/dag_usgs_backfill_30d.py                840  0.00s             1           0  0.06s           2026-10-28T13:18:42
+================================================================================
+[2026-10-28T13:19:43.037+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    857  0.01s             1           0  0.07s           2026-10-28T13:19:12
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:19:13
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:19:12
+/opt/airflow/dags/dag_usgs_backfill_30d.py                860  0.00s             1           0  0.06s           2026-10-28T13:19:12
+================================================================================
+[2026-10-28T13:20:13.246+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    889  0.01s             1           0  0.07s           2026-10-28T13:19:43
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:19:43
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:19:43
+/opt/airflow/dags/dag_usgs_backfill_30d.py                892  0.00s             1           0  0.06s           2026-10-28T13:19:43
+================================================================================
+[2026-10-28T13:20:43.458+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    909  0.01s             1           0  0.06s           2026-10-28T13:20:13
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:20:13
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:20:13
+/opt/airflow/dags/dag_usgs_backfill_30d.py                912  0.00s             1           0  0.06s           2026-10-28T13:20:13
+================================================================================
+[2026-10-28T13:21:13.671+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    929  0.01s             1           0  0.07s           2026-10-28T13:20:43
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:20:43
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:20:43
+/opt/airflow/dags/dag_usgs_backfill_30d.py                932  0.00s             1           0  0.06s           2026-10-28T13:20:43
+================================================================================
+[2026-10-28T13:21:43.883+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    949  0.01s             1           0  0.06s           2026-10-28T13:21:13
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:21:13
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:21:13
+/opt/airflow/dags/dag_usgs_backfill_30d.py                952  0.00s             1           0  0.06s           2026-10-28T13:21:13
+================================================================================
+[2026-10-28T13:22:14.106+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    969  0.01s             1           0  0.08s           2026-10-28T13:21:43
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:21:44
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:21:44
+/opt/airflow/dags/dag_usgs_backfill_30d.py                972  0.01s             1           0  0.07s           2026-10-28T13:21:43
+================================================================================
+[2026-10-28T13:22:44.313+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py    989  0.01s             1           0  0.06s           2026-10-28T13:22:14
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:22:14
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:22:14
+/opt/airflow/dags/dag_usgs_backfill_30d.py                992  0.00s             1           0  0.06s           2026-10-28T13:22:14
+================================================================================
+[2026-10-28T13:23:14.534+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1009  0.01s             1           0  0.08s           2026-10-28T13:22:44
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:22:44
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:22:44
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1012  0.00s             1           0  0.08s           2026-10-28T13:22:44
+================================================================================
+[2026-10-28T13:23:35.713+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:23:35.714+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:23:44.754+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1029  0.01s             1           0  0.06s           2026-10-28T13:23:14
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:23:14
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:23:14
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1032  0.01s             1           0  0.06s           2026-10-28T13:23:14
+================================================================================
+[2026-10-28T13:24:14.958+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1049  0.01s             1           0  0.07s           2026-10-28T13:23:44
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:23:44
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:23:44
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1052  0.01s             1           0  0.06s           2026-10-28T13:23:44
+================================================================================
+[2026-10-28T13:24:45.180+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1069  0.01s             1           0  0.07s           2026-10-28T13:24:15
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:24:15
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:24:15
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1072  0.00s             1           0  0.07s           2026-10-28T13:24:15
+================================================================================
+[2026-10-28T13:25:15.396+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1101  0.01s             1           0  0.07s           2026-10-28T13:24:45
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:24:45
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:24:45
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1104  0.00s             1           0  0.06s           2026-10-28T13:24:45
+================================================================================
+[2026-10-28T13:25:45.606+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1121  0.02s             1           0  0.06s           2026-10-28T13:25:15
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:25:15
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:25:15
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1124  0.01s             1           0  0.06s           2026-10-28T13:25:15
+================================================================================
+[2026-10-28T13:26:15.838+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1141  0.01s             1           0  0.09s           2026-10-28T13:25:45
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:25:45
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.08s           2026-10-28T13:25:45
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1144  0.00s             1           0  0.08s           2026-10-28T13:25:45
+================================================================================
+[2026-10-28T13:26:46.055+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1161  0.01s             1           0  0.07s           2026-10-28T13:26:15
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:26:16
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:26:15
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1164  0.00s             1           0  0.06s           2026-10-28T13:26:15
+================================================================================
+[2026-10-28T13:27:16.271+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1181  0.01s             1           0  0.06s           2026-10-28T13:26:46
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:26:46
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:26:46
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1184  0.00s             1           0  0.06s           2026-10-28T13:26:46
+================================================================================
+[2026-10-28T13:27:46.469+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1201  0.01s             1           0  0.06s           2026-10-28T13:27:16
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:27:16
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:27:16
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1204  0.01s             1           0  0.06s           2026-10-28T13:27:16
+================================================================================
+[2026-10-28T13:28:16.682+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1221  0.01s             1           0  0.08s           2026-10-28T13:27:46
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:27:46
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:27:46
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1224  0.01s             1           0  0.06s           2026-10-28T13:27:46
+================================================================================
+[2026-10-28T13:28:35.908+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:28:35.912+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:28:46.958+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1241  0.01s             1           0  0.12s           2026-10-28T13:28:16
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.10s           2026-10-28T13:28:16
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.09s           2026-10-28T13:28:16
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1244  0.00s             1           0  0.10s           2026-10-28T13:28:16
+================================================================================
+[2026-10-28T13:29:17.170+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1261  0.01s             1           0  0.07s           2026-10-28T13:28:47
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:28:47
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:28:47
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1264  0.01s             1           0  0.06s           2026-10-28T13:28:47
+================================================================================
+[2026-10-28T13:29:47.388+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1281  0.01s             1           0  0.07s           2026-10-28T13:29:17
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:29:17
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:29:17
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1284  0.00s             1           0  0.06s           2026-10-28T13:29:17
+================================================================================
+[2026-10-28T13:30:17.612+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1313  0.01s             1           0  0.08s           2026-10-28T13:29:47
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:29:47
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:29:47
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1316  0.00s             1           0  0.06s           2026-10-28T13:29:47
+================================================================================
+[2026-10-28T13:30:47.825+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1333  0.01s             1           0  0.06s           2026-10-28T13:30:17
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:30:17
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:30:17
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1336  0.00s             1           0  0.06s           2026-10-28T13:30:17
+================================================================================
+[2026-10-28T13:31:18.040+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1353  0.01s             1           0  0.07s           2026-10-28T13:30:47
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:30:48
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:30:47
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1356  0.00s             1           0  0.06s           2026-10-28T13:30:47
+================================================================================
+[2026-10-28T13:31:48.249+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1373  0.01s             1           0  0.06s           2026-10-28T13:31:18
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:31:18
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:31:18
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1376  0.00s             1           0  0.06s           2026-10-28T13:31:18
+================================================================================
+[2026-10-28T13:32:18.528+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1393  0.01s             1           0  0.07s           2026-10-28T13:31:48
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.17s           2026-10-28T13:31:48
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.13s           2026-10-28T13:31:48
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1396  0.00s             1           0  0.10s           2026-10-28T13:31:48
+================================================================================
+[2026-10-28T13:32:48.738+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1413  0.01s             1           0  0.06s           2026-10-28T13:32:18
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:32:18
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:32:18
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1416  0.00s             1           0  0.06s           2026-10-28T13:32:18
+================================================================================
+[2026-10-28T13:33:18.949+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1433  0.01s             1           0  0.07s           2026-10-28T13:32:48
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:32:48
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:32:48
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1436  0.01s             1           0  0.06s           2026-10-28T13:32:48
+================================================================================
+[2026-10-28T13:33:36.116+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:33:36.117+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:33:49.164+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1453  0.01s             1           0  0.06s           2026-10-28T13:33:19
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:33:19
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:33:19
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1456  0.00s             1           0  0.06s           2026-10-28T13:33:19
+================================================================================
+[2026-10-28T13:34:19.370+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1473  0.01s             1           0  0.06s           2026-10-28T13:33:49
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:33:49
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:33:49
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1476  0.00s             1           0  0.06s           2026-10-28T13:33:49
+================================================================================
+[2026-10-28T13:34:49.578+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1493  0.01s             1           0  0.07s           2026-10-28T13:34:19
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:34:19
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:34:19
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1496  0.00s             1           0  0.07s           2026-10-28T13:34:19
+================================================================================
+[2026-10-28T13:35:19.788+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1525  0.01s             1           0  0.06s           2026-10-28T13:34:49
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:34:49
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:34:49
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1528  0.01s             1           0  0.06s           2026-10-28T13:34:49
+================================================================================
+[2026-10-28T13:35:50.007+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1545  0.01s             1           0  0.07s           2026-10-28T13:35:19
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:35:19
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:35:19
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1548  0.00s             1           0  0.07s           2026-10-28T13:35:19
+================================================================================
+[2026-10-28T13:36:20.213+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1565  0.01s             1           0  0.07s           2026-10-28T13:35:50
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:35:50
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:35:50
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1568  0.01s             1           0  0.06s           2026-10-28T13:35:50
+================================================================================
+[2026-10-28T13:36:50.421+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1585  0.01s             1           0  0.07s           2026-10-28T13:36:20
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:36:20
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:36:20
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1588  0.00s             1           0  0.06s           2026-10-28T13:36:20
+================================================================================
+[2026-10-28T13:37:20.636+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1605  0.02s             1           0  0.07s           2026-10-28T13:36:50
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:36:50
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:36:50
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1608  0.01s             1           0  0.06s           2026-10-28T13:36:50
+================================================================================
+[2026-10-28T13:37:50.894+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1625  0.01s             1           0  0.09s           2026-10-28T13:37:20
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.09s           2026-10-28T13:37:20
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.10s           2026-10-28T13:37:20
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1628  0.00s             1           0  0.10s           2026-10-28T13:37:20
+================================================================================
+[2026-10-28T13:38:21.135+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1645  0.01s             1           0  0.09s           2026-10-28T13:37:50
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:37:51
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:37:51
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1648  0.01s             1           0  0.08s           2026-10-28T13:37:50
+================================================================================
+[2026-10-28T13:38:36.292+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:38:36.293+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:38:51.343+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1665  0.01s             1           0  0.06s           2026-10-28T13:38:21
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:38:21
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:38:21
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1668  0.00s             1           0  0.06s           2026-10-28T13:38:21
+================================================================================
+[2026-10-28T13:39:21.548+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1685  0.01s             1           0  0.07s           2026-10-28T13:38:51
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:38:51
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:38:51
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1688  0.00s             1           0  0.06s           2026-10-28T13:38:51
+================================================================================
+[2026-10-28T13:39:51.756+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1705  0.01s             1           0  0.06s           2026-10-28T13:39:21
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:39:21
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:39:21
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1708  0.00s             1           0  0.06s           2026-10-28T13:39:21
+================================================================================
+[2026-10-28T13:40:21.960+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1737  0.01s             1           0  0.06s           2026-10-28T13:39:51
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:39:51
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:39:51
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1740  0.01s             1           0  0.06s           2026-10-28T13:39:51
+================================================================================
+[2026-10-28T13:40:52.167+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1757  0.01s             1           0  0.07s           2026-10-28T13:40:22
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:40:22
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:40:22
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1760  0.01s             1           0  0.07s           2026-10-28T13:40:22
+================================================================================
+[2026-10-28T13:41:22.382+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1777  0.02s             1           0  0.07s           2026-10-28T13:40:52
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:40:52
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:40:52
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1780  0.01s             1           0  0.06s           2026-10-28T13:40:52
+================================================================================
+[2026-10-28T13:41:52.599+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1797  0.01s             1           0  0.07s           2026-10-28T13:41:22
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:41:22
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:41:22
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1800  0.00s             1           0  0.07s           2026-10-28T13:41:22
+================================================================================
+[2026-10-28T13:42:22.817+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1817  0.01s             1           0  0.08s           2026-10-28T13:41:52
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:41:52
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:41:52
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1820  0.00s             1           0  0.06s           2026-10-28T13:41:52
+================================================================================
+[2026-10-28T13:42:53.022+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1837  0.01s             1           0  0.07s           2026-10-28T13:42:22
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:42:22
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:42:22
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1840  0.01s             1           0  0.06s           2026-10-28T13:42:22
+================================================================================
+[2026-10-28T13:43:23.231+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1857  0.01s             1           0  0.07s           2026-10-28T13:42:53
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:42:53
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:42:53
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1860  0.00s             1           0  0.06s           2026-10-28T13:42:53
+================================================================================
+[2026-10-28T13:43:36.381+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:43:36.382+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags
+[2026-10-28T13:43:53.436+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1877  0.01s             1           0  0.06s           2026-10-28T13:43:23
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:43:23
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:43:23
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1880  0.00s             1           0  0.06s           2026-10-28T13:43:23
+================================================================================
+[2026-10-28T13:44:23.639+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1897  0.01s             1           0  0.07s           2026-10-28T13:43:53
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:43:53
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:43:53
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1900  0.01s             1           0  0.06s           2026-10-28T13:43:53
+================================================================================
+[2026-10-28T13:44:53.843+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1917  0.01s             1           0  0.07s           2026-10-28T13:44:23
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:44:23
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:44:23
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1920  0.00s             1           0  0.07s           2026-10-28T13:44:23
+================================================================================
+[2026-10-28T13:45:24.067+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1949  0.01s             1           0  0.08s           2026-10-28T13:44:53
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:44:54
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:44:53
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1952  0.01s             1           0  0.06s           2026-10-28T13:44:53
+================================================================================
+[2026-10-28T13:45:54.272+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1969  0.01s             1           0  0.07s           2026-10-28T13:45:24
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:45:24
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:45:24
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1972  0.00s             1           0  0.06s           2026-10-28T13:45:24
+================================================================================
+[2026-10-28T13:46:24.481+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   1989  0.01s             1           0  0.07s           2026-10-28T13:45:54
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:45:54
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:45:54
+/opt/airflow/dags/dag_usgs_backfill_30d.py               1992  0.01s             1           0  0.06s           2026-10-28T13:45:54
+================================================================================
+[2026-10-28T13:46:54.714+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   2009  0.01s             1           0  0.10s           2026-10-28T13:46:24
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:46:24
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:46:24
+/opt/airflow/dags/dag_usgs_backfill_30d.py               2012  0.00s             1           0  0.08s           2026-10-28T13:46:24
+================================================================================
+[2026-10-28T13:47:24.921+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   2029  0.01s             1           0  0.07s           2026-10-28T13:46:54
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:46:54
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:46:54
+/opt/airflow/dags/dag_usgs_backfill_30d.py               2032  0.01s             1           0  0.06s           2026-10-28T13:46:54
+================================================================================
+[2026-10-28T13:47:55.130+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   2049  0.01s             1           0  0.06s           2026-10-28T13:47:24
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.06s           2026-10-28T13:47:25
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.06s           2026-10-28T13:47:25
+/opt/airflow/dags/dag_usgs_backfill_30d.py               2052  0.01s             1           0  0.06s           2026-10-28T13:47:24
+================================================================================
+[2026-10-28T13:48:25.362+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_ai_daily_report_and_anomalies.py   2069  0.01s             1           0  0.09s           2026-10-28T13:47:55
+/opt/airflow/dags/dag_usgs_ingest_realtime.py                                    1           0  0.07s           2026-10-28T13:47:55
+/opt/airflow/dags/dag_usgs_transform_and_quality.py                              1           0  0.07s           2026-10-28T13:47:55
+/opt/airflow/dags/dag_usgs_backfill_30d.py               2072  0.00s             1           0  0.07s           2026-10-28T13:47:55
+================================================================================
+[2026-10-28T13:48:36.509+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-10-28T13:48:36.510+0000] {manager.py:741} INFO - There are 4 files in /opt/airflow/dags

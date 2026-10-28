@@ -1,0 +1,630 @@
+[2026-10-28T13:03:36.093+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:03:36.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:03:36.095+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:03:36.095+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:03:36.111+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:03:36.248+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:03:36.247+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:03:36.260+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:03:36.260+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:03:36.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.180 seconds
+[2026-10-28T13:04:06.472+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:06.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:04:06.473+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:06.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:06.481+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:06.496+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:06.495+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:04:06.509+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:06.509+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:04:06.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:04:36.687+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:36.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:04:36.694+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:36.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:36.702+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:04:36.716+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:36.716+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:04:36.729+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:04:36.729+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:04:36.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.054 seconds
+[2026-10-28T13:05:06.897+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:06.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:05:06.899+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:06.899+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:06.907+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:06.921+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:06.920+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:05:06.934+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:06.934+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:05:06.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:05:37.112+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:37.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:05:37.114+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:37.113+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:37.122+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:05:37.136+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:37.135+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:05:37.149+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:05:37.149+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:05:37.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:06:07.320+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:07.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:06:07.321+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:07.321+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:07.329+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:07.343+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:07.343+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:06:07.357+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:07.357+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:06:07.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:06:37.526+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:37.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:06:37.530+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:37.530+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:37.538+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:06:37.552+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:37.552+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:06:37.566+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:06:37.565+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:06:37.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:07:07.737+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:07.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:07:07.738+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:07.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:07.746+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:07.761+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:07.760+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:07:07.774+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:07.774+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:07:07.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:07:37.891+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:37.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:07:37.895+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:37.895+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:37.903+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:07:37.917+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:37.917+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:07:37.931+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:07:37.931+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:07:37.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:08:08.100+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:08.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:08:08.102+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:08.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:08.110+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:08.124+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:08.124+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:08:08.137+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:08.137+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:08:08.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:08:38.316+0000] {processor.py:161} INFO - Started process (PID=393) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:38.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:08:38.321+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:38.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:38.328+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:08:38.343+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:38.342+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:08:38.356+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:08:38.355+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:08:38.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:09:08.522+0000] {processor.py:161} INFO - Started process (PID=413) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:08.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:09:08.523+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:08.523+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:08.531+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:08.546+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:08.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:09:08.559+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:08.559+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:09:08.568+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:09:38.730+0000] {processor.py:161} INFO - Started process (PID=433) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:38.733+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:09:38.734+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:38.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:38.742+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:09:38.756+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:38.756+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:09:38.770+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:09:38.769+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:09:38.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:10:08.940+0000] {processor.py:161} INFO - Started process (PID=465) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:08.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:10:08.942+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:08.942+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:08.950+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:08.964+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:08.963+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:10:08.977+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:08.977+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:10:08.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:10:39.149+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:39.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:10:39.154+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:39.153+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:39.162+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:10:39.175+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:39.175+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:10:39.189+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:10:39.189+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:10:39.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:11:09.369+0000] {processor.py:161} INFO - Started process (PID=505) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:09.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:11:09.371+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:09.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:09.379+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:09.393+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:09.393+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:11:09.406+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:09.406+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:11:09.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:11:39.586+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:39.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:11:39.591+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:39.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:39.598+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:11:39.612+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:39.612+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:11:39.626+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:11:39.626+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:11:39.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:12:09.800+0000] {processor.py:161} INFO - Started process (PID=545) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:09.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:12:09.801+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:09.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:09.810+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:09.823+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:09.823+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:12:09.837+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:09.837+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:12:09.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:12:40.020+0000] {processor.py:161} INFO - Started process (PID=565) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:40.023+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:12:40.024+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:40.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:40.032+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:12:40.046+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:40.046+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:12:40.059+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:12:40.059+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:12:40.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:13:10.235+0000] {processor.py:161} INFO - Started process (PID=585) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:10.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:13:10.237+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:10.236+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:10.244+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:10.259+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:10.258+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:13:10.273+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:10.273+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:13:10.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:13:40.456+0000] {processor.py:161} INFO - Started process (PID=605) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:40.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:13:40.461+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:40.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:40.469+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:13:40.483+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:40.483+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:13:40.497+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:13:40.496+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:13:40.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:14:10.670+0000] {processor.py:161} INFO - Started process (PID=625) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:10.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:14:10.671+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:10.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:10.679+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:10.693+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:10.693+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:14:10.706+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:10.706+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:14:10.716+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:14:40.881+0000] {processor.py:161} INFO - Started process (PID=645) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:40.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:14:40.885+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:40.885+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:40.893+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:14:40.907+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:40.907+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:14:40.921+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:14:40.921+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:14:40.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.053 seconds
+[2026-10-28T13:15:11.092+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:11.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:15:11.093+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:11.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:11.102+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:11.116+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:11.116+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:15:11.130+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:11.130+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:15:11.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:15:41.305+0000] {processor.py:161} INFO - Started process (PID=697) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:41.306+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:15:41.307+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:41.307+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:41.315+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:15:41.329+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:41.329+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:15:41.342+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:15:41.342+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:15:41.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:16:11.517+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:11.518+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:16:11.519+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:11.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:11.527+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:11.541+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:11.541+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:16:11.554+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:11.554+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:16:11.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:16:41.733+0000] {processor.py:161} INFO - Started process (PID=737) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:41.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:16:41.738+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:41.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:41.746+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:16:41.760+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:41.759+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:16:41.773+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:16:41.773+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:16:41.783+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:17:11.948+0000] {processor.py:161} INFO - Started process (PID=757) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:11.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:17:11.949+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:11.949+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:11.957+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:11.971+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:11.971+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:17:11.985+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:11.984+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:17:11.995+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:17:42.165+0000] {processor.py:161} INFO - Started process (PID=777) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:42.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:17:42.170+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:42.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:42.177+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:17:42.191+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:42.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:17:42.204+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:17:42.204+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:17:42.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:18:12.382+0000] {processor.py:161} INFO - Started process (PID=797) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:12.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:18:12.383+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:12.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:12.391+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:12.405+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:12.405+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:18:12.419+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:12.419+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:18:12.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:18:42.604+0000] {processor.py:161} INFO - Started process (PID=817) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:42.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:18:42.608+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:42.608+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:42.616+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:18:42.630+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:42.630+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:18:42.643+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:18:42.643+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:18:42.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:19:12.819+0000] {processor.py:161} INFO - Started process (PID=837) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:12.819+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:19:12.820+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:12.820+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:12.828+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:12.842+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:12.842+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:19:12.856+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:12.855+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:19:12.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:19:43.034+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:43.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:19:43.039+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:43.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:43.046+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:19:43.061+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:43.060+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:19:43.075+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:19:43.075+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:19:43.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.053 seconds
+[2026-10-28T13:20:13.242+0000] {processor.py:161} INFO - Started process (PID=889) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:13.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:20:13.244+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:13.243+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:13.252+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:13.266+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:13.265+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:20:13.279+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:13.278+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:20:13.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:20:43.455+0000] {processor.py:161} INFO - Started process (PID=909) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:43.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:20:43.460+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:43.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:43.467+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:20:43.481+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:43.481+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:20:43.494+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:20:43.494+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:20:43.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:21:13.668+0000] {processor.py:161} INFO - Started process (PID=929) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:13.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:21:13.670+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:13.669+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:13.678+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:13.692+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:13.691+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:21:13.705+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:13.705+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:21:13.714+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:21:43.881+0000] {processor.py:161} INFO - Started process (PID=949) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:43.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:21:43.885+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:43.885+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:43.896+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:21:43.913+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:43.913+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:21:43.928+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:21:43.928+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:21:43.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.059 seconds
+[2026-10-28T13:22:14.102+0000] {processor.py:161} INFO - Started process (PID=969) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:14.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:22:14.104+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:14.104+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:14.112+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:14.126+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:14.126+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:22:14.140+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:14.140+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:22:14.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:22:44.310+0000] {processor.py:161} INFO - Started process (PID=989) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:44.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:22:44.314+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:44.314+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:44.326+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:22:44.343+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:44.343+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:22:44.361+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:22:44.361+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:22:44.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.064 seconds
+[2026-10-28T13:23:14.531+0000] {processor.py:161} INFO - Started process (PID=1009) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:14.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:23:14.532+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:14.532+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:14.540+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:14.554+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:14.554+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:23:14.568+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:14.568+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:23:14.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:23:44.750+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:44.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:23:44.755+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:44.755+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:44.764+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:23:44.779+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:44.779+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:23:44.792+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:23:44.792+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:23:44.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.054 seconds
+[2026-10-28T13:24:14.953+0000] {processor.py:161} INFO - Started process (PID=1049) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:14.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:24:14.954+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:14.954+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:14.963+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:14.979+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:14.978+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:24:14.994+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:14.994+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:24:15.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.055 seconds
+[2026-10-28T13:24:45.177+0000] {processor.py:161} INFO - Started process (PID=1069) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:45.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:24:45.182+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:45.181+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:45.189+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:24:45.203+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:45.203+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:24:45.216+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:24:45.216+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:24:45.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:25:15.392+0000] {processor.py:161} INFO - Started process (PID=1101) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:15.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:25:15.394+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:15.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:15.402+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:15.416+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:15.416+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:25:15.429+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:15.429+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:25:15.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:25:45.599+0000] {processor.py:161} INFO - Started process (PID=1121) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:45.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:25:45.601+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:45.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:45.609+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:25:45.630+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:45.629+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:25:45.646+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:25:45.646+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:25:45.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.066 seconds
+[2026-10-28T13:26:15.834+0000] {processor.py:161} INFO - Started process (PID=1141) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:15.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:26:15.836+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:15.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:15.845+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:15.860+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:15.860+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:26:15.874+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:15.874+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:26:15.886+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.053 seconds
+[2026-10-28T13:26:46.052+0000] {processor.py:161} INFO - Started process (PID=1161) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:46.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:26:46.056+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:46.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:46.064+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:26:46.078+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:46.078+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:26:46.092+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:26:46.091+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:26:46.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:27:16.267+0000] {processor.py:161} INFO - Started process (PID=1181) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:16.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:27:16.269+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:16.269+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:16.277+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:16.292+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:16.291+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:27:16.305+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:16.305+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:27:16.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:27:46.468+0000] {processor.py:161} INFO - Started process (PID=1201) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:46.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:27:46.470+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:46.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:46.479+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:27:46.494+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:46.494+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:27:46.513+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:27:46.513+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:27:46.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.061 seconds
+[2026-10-28T13:28:16.677+0000] {processor.py:161} INFO - Started process (PID=1221) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:16.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:28:16.679+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:16.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:16.689+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:16.709+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:16.709+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:28:16.726+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:16.726+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:28:16.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.100 seconds
+[2026-10-28T13:28:46.954+0000] {processor.py:161} INFO - Started process (PID=1241) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:46.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:28:46.959+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:46.959+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:46.967+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:28:46.982+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:46.981+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:28:46.995+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:28:46.995+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:28:47.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:29:17.166+0000] {processor.py:161} INFO - Started process (PID=1261) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:17.167+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:29:17.168+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:17.168+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:17.176+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:17.191+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:17.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:29:17.205+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:17.205+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:29:17.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:29:47.388+0000] {processor.py:161} INFO - Started process (PID=1281) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:47.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:29:47.390+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:47.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:47.399+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:29:47.415+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:47.415+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:29:47.429+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:29:47.429+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:29:47.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.054 seconds
+[2026-10-28T13:30:17.608+0000] {processor.py:161} INFO - Started process (PID=1313) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:17.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:30:17.610+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:17.609+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:17.618+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:17.633+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:17.633+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:30:17.647+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:17.647+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:30:17.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:30:47.822+0000] {processor.py:161} INFO - Started process (PID=1333) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:47.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:30:47.826+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:47.826+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:47.835+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:30:47.853+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:47.853+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:30:47.867+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:30:47.867+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:30:47.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.056 seconds
+[2026-10-28T13:31:18.037+0000] {processor.py:161} INFO - Started process (PID=1353) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:18.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:31:18.038+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:18.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:18.046+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:18.061+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:18.060+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:31:18.074+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:18.074+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:31:18.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:31:48.245+0000] {processor.py:161} INFO - Started process (PID=1373) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:48.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:31:48.247+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:48.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:48.256+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:31:48.270+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:48.270+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:31:48.284+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:31:48.284+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:31:48.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.060 seconds
+[2026-10-28T13:32:18.524+0000] {processor.py:161} INFO - Started process (PID=1393) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:18.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:32:18.527+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:18.526+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:18.535+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:18.549+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:18.549+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:32:18.563+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:18.563+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:32:18.573+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:32:48.735+0000] {processor.py:161} INFO - Started process (PID=1413) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:48.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:32:48.736+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:48.736+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:48.746+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:32:48.763+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:48.763+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:32:48.777+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:32:48.777+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:32:48.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.056 seconds
+[2026-10-28T13:33:18.945+0000] {processor.py:161} INFO - Started process (PID=1433) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:18.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:33:18.946+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:18.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:18.955+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:18.969+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:18.969+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:33:18.984+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:18.983+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:33:18.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:33:49.160+0000] {processor.py:161} INFO - Started process (PID=1453) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:49.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:33:49.162+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:49.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:49.170+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:33:49.184+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:49.184+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:33:49.197+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:33:49.197+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:33:49.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.048 seconds
+[2026-10-28T13:34:19.366+0000] {processor.py:161} INFO - Started process (PID=1473) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:19.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:34:19.368+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:19.368+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:19.376+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:19.394+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:19.394+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:34:19.407+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:19.407+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:34:19.417+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.053 seconds
+[2026-10-28T13:34:49.575+0000] {processor.py:161} INFO - Started process (PID=1493) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:49.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:34:49.579+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:49.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:49.588+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:34:49.601+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:49.601+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:34:49.615+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:34:49.615+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:34:49.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:35:19.785+0000] {processor.py:161} INFO - Started process (PID=1525) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:19.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:35:19.786+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:19.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:19.795+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:19.810+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:19.810+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:35:19.825+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:19.825+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:35:19.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:35:50.004+0000] {processor.py:161} INFO - Started process (PID=1545) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:50.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:35:50.008+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:50.008+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:50.016+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:35:50.030+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:50.030+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:35:50.044+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:35:50.043+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:35:50.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:36:20.209+0000] {processor.py:161} INFO - Started process (PID=1565) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:20.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:36:20.211+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:20.210+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:20.219+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:20.233+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:20.233+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:36:20.247+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:20.247+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:36:20.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:36:50.418+0000] {processor.py:161} INFO - Started process (PID=1585) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:50.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:36:50.423+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:50.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:50.431+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:36:50.445+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:50.444+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:36:50.458+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:36:50.458+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:36:50.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:37:20.629+0000] {processor.py:161} INFO - Started process (PID=1605) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:20.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:37:20.631+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:20.631+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:20.641+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:20.659+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:20.658+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:37:20.676+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:20.676+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:37:20.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.070 seconds
+[2026-10-28T13:37:50.903+0000] {processor.py:161} INFO - Started process (PID=1625) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:50.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:37:50.905+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:50.905+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:50.916+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:37:50.935+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:50.934+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:37:50.952+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:37:50.952+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:37:50.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.064 seconds
+[2026-10-28T13:38:21.131+0000] {processor.py:161} INFO - Started process (PID=1645) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:21.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:38:21.133+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:21.132+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:21.141+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:21.155+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:21.155+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:38:21.169+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:21.169+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:38:21.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:38:51.339+0000] {processor.py:161} INFO - Started process (PID=1665) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:51.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:38:51.348+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:51.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:51.358+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:38:51.372+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:51.372+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:38:51.386+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:38:51.385+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:38:51.397+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.059 seconds
+[2026-10-28T13:39:21.545+0000] {processor.py:161} INFO - Started process (PID=1685) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:21.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:39:21.547+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:21.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:21.555+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:21.569+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:21.569+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:39:21.583+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:21.582+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:39:21.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:39:51.752+0000] {processor.py:161} INFO - Started process (PID=1705) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:51.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:39:51.757+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:51.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:51.765+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:39:51.779+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:51.779+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:39:51.792+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:39:51.792+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:39:51.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.051 seconds
+[2026-10-28T13:40:21.956+0000] {processor.py:161} INFO - Started process (PID=1737) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:21.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:40:21.957+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:21.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:21.965+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:21.980+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:21.980+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:40:21.994+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:21.994+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:40:22.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:40:52.163+0000] {processor.py:161} INFO - Started process (PID=1757) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:52.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:40:52.164+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:52.164+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:52.173+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:40:52.187+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:52.187+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:40:52.201+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:40:52.201+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:40:52.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:41:22.376+0000] {processor.py:161} INFO - Started process (PID=1777) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:22.376+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:41:22.378+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:22.378+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:22.389+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:22.405+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:22.404+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:41:22.420+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:22.420+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:41:22.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.057 seconds
+[2026-10-28T13:41:52.596+0000] {processor.py:161} INFO - Started process (PID=1797) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:52.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:41:52.601+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:52.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:52.609+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:41:52.624+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:52.623+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:41:52.638+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:41:52.638+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:41:52.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.055 seconds
+[2026-10-28T13:42:22.813+0000] {processor.py:161} INFO - Started process (PID=1817) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:22.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:42:22.815+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:22.815+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:22.823+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:22.838+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:22.837+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:42:22.852+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:22.851+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:42:22.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:42:53.018+0000] {processor.py:161} INFO - Started process (PID=1837) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:53.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:42:53.023+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:53.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:53.031+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:42:53.046+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:53.046+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:42:53.061+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:42:53.061+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:42:53.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.056 seconds
+[2026-10-28T13:43:23.228+0000] {processor.py:161} INFO - Started process (PID=1857) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:23.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:43:23.229+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:23.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:23.237+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:23.252+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:23.252+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:43:23.265+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:23.265+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:43:23.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds
+[2026-10-28T13:43:53.433+0000] {processor.py:161} INFO - Started process (PID=1877) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:53.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:43:53.439+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:53.438+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:53.447+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:43:53.463+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:53.462+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:43:53.476+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:43:53.476+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:43:53.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.054 seconds
+[2026-10-28T13:44:23.635+0000] {processor.py:161} INFO - Started process (PID=1897) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:23.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:44:23.637+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:23.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:23.646+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:23.660+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:23.660+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:44:23.674+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:23.674+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:44:23.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:44:53.840+0000] {processor.py:161} INFO - Started process (PID=1917) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:53.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:44:53.844+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:53.844+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:53.852+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:44:53.868+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:53.868+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:44:53.882+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:44:53.882+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:44:53.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.057 seconds
+[2026-10-28T13:45:24.062+0000] {processor.py:161} INFO - Started process (PID=1949) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:24.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:45:24.064+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:24.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:24.072+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:24.086+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:24.086+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:45:24.101+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:24.101+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:45:24.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:45:54.269+0000] {processor.py:161} INFO - Started process (PID=1969) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:54.272+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:45:54.273+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:54.273+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:54.281+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:45:54.295+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:54.295+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:45:54.309+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:45:54.308+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:45:54.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.052 seconds
+[2026-10-28T13:46:24.476+0000] {processor.py:161} INFO - Started process (PID=1989) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:24.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:46:24.478+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:24.478+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:24.490+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:24.512+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:24.511+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:46:24.532+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:24.532+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:46:24.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.072 seconds
+[2026-10-28T13:46:54.711+0000] {processor.py:161} INFO - Started process (PID=2009) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:54.714+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:46:54.716+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:54.715+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:54.724+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:46:54.739+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:54.739+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:46:54.753+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:46:54.753+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:46:54.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.054 seconds
+[2026-10-28T13:47:24.918+0000] {processor.py:161} INFO - Started process (PID=2029) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:24.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:47:24.919+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:24.919+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:24.927+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:24.942+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:24.942+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:47:24.955+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:24.955+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:47:24.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.049 seconds
+[2026-10-28T13:47:55.125+0000] {processor.py:161} INFO - Started process (PID=2049) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:55.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:47:55.130+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:55.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:55.139+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:47:55.157+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:55.157+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:47:55.175+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:47:55.175+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:47:55.188+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.065 seconds
+[2026-10-28T13:48:25.359+0000] {processor.py:161} INFO - Started process (PID=2069) to work on /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:48:25.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py for tasks to queue
+[2026-10-28T13:48:25.360+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:48:25.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:48:25.369+0000] {processor.py:840} INFO - DAG(s) 'dag_ai_daily_report_and_anomalies' retrieved from /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py
+[2026-10-28T13:48:25.383+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:48:25.383+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-10-28T13:48:25.397+0000] {logging_mixin.py:188} INFO - [2026-10-28T13:48:25.397+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_ai_daily_report_and_anomalies to 2026-10-28 02:00:00+00:00, run_after=2026-10-29 02:00:00+00:00
+[2026-10-28T13:48:25.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_ai_daily_report_and_anomalies.py took 0.050 seconds

@@ -1,0 +1,16 @@
+[2026-10-28T13:25:00.723+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_usgs_ingest_realtime.check_usgs_connectivity scheduled__2026-10-28T13:20:00+00:00 [queued]>
+[2026-10-28T13:25:00.727+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_usgs_ingest_realtime.check_usgs_connectivity scheduled__2026-10-28T13:20:00+00:00 [queued]>
+[2026-10-28T13:25:00.727+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 4
+[2026-10-28T13:25:00.734+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonDecoratedOperator): check_usgs_connectivity> on 2026-10-28 13:20:00+00:00
+[2026-10-28T13:25:00.737+0000] {standard_task_runner.py:60} INFO - Started process 1090 to run task
+[2026-10-28T13:25:00.739+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'dag_usgs_ingest_realtime', 'check_usgs_connectivity', 'scheduled__2026-10-28T13:20:00+00:00', '--job-id', '367', '--raw', '--subdir', 'DAGS_FOLDER/dag_usgs_ingest_realtime.py', '--cfg-path', '/tmp/tmps1nrennj']
+[2026-10-28T13:25:00.740+0000] {standard_task_runner.py:88} INFO - Job 367: Subtask check_usgs_connectivity
+[2026-10-28T13:25:00.769+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_usgs_ingest_realtime.check_usgs_connectivity scheduled__2026-10-28T13:20:00+00:00 [running]> on host 59f7e67bb8bc
+[2026-10-28T13:25:00.818+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sismowatch_ops' AIRFLOW_CTX_DAG_ID='dag_usgs_ingest_realtime' AIRFLOW_CTX_TASK_ID='check_usgs_connectivity' AIRFLOW_CTX_EXECUTION_DATE='2026-10-28T13:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-28T13:20:00+00:00'
+[2026-10-28T13:25:00.818+0000] {usgs_client.py:33} INFO - Consultando feed USGS en tiempo real (intento 1/1)...
+[2026-10-28T13:25:02.078+0000] {usgs_client.py:49} INFO - Respuesta exitosa de USGS con 8 eventos sísmicos
+[2026-10-28T13:25:02.079+0000] {dag_usgs_ingest_realtime.py:75} INFO - Verificación de conectividad USGS exitosa (8 eventos disponibles)
+[2026-10-28T13:25:02.079+0000] {python.py:201} INFO - Done. Returned value was: True
+[2026-10-28T13:25:02.098+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag_usgs_ingest_realtime, task_id=check_usgs_connectivity, execution_date=20261028T132000, start_date=20261028T132500, end_date=20261028T132502
+[2026-10-28T13:25:02.115+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-10-28T13:25:02.127+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
