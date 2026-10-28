@@ -19,7 +19,7 @@ El feed público de USGS (`all_hour.geojson`) cambia dinámicamente minuto a min
 ### Decisiones que habilita:
 1. **Activación de protocolos de contingencia en menos de 5 minutos:** Alertas de eventos de alta intensidad ($M \ge 6.0$) o alertas de tsunami transmitidas en vivo vía Server-Sent Events (SSE).
 2. **Confiabilidad analítica sin degradación histórica:** Separación estricta en capas Medallion (`raw`, `staging`, `curated`). Los registros corruptos son retenidos en staging con su motivo de rechazo y jamás contaminan los KPIs de negocio.
-3. **Reportes ejecutivos diarios con IA sin alucinaciones:** Resúmenes generados con Google Gemini 1.5 Flash cuyas cifras son calculadas previamente en Python/SQL y verificadas antes de su publicación.
+3. **Reportes ejecutivos diarios con IA sin alucinaciones:** Resúmenes generados con Google Gemini (`gemini-3.5-flash` / `gemini-2.5-flash-lite`) cuyas cifras son calculadas previamente en Python/SQL y verificadas antes de su publicación.
 
 ---
 
@@ -98,34 +98,262 @@ flowchart LR
 
 ---
 
-## 3. Puesta en Marcha (Despliegue Local en 1 Solo Comando)
+## 3. Puesta en Marcha desde Cero (Guía Multiplataforma: Linux y Windows)
 
-### Requisitos Previos:
-- Docker y Docker Compose (v2)
-- Git
+Esta sección describe el proceso completo para desplegar y verificar el ecosistema **SismoWatch** en una máquina limpia, tanto en entornos **Linux** como en **Windows**.
 
-### Paso 1: Clonar y configurar variables de entorno
+---
+
+### 3.1 Requisitos Previos del Sistema
+
+| Componente | Requisito en Linux | Requisito en Windows |
+| :--- | :--- | :--- |
+| **Sistema Operativo** | Ubuntu 22.04+ / Debian 12+ / Fedora / Arch | Windows 10 (Build 19041+) o Windows 11 (64-bit) |
+| **Virtualización / Docker** | Docker Engine 24+ y Docker Compose v2 | [Docker Desktop](https://www.docker.com/products/docker-desktop/) con backend **WSL 2** activado |
+| **Python** | Python 3.10, 3.11 o 3.12 (`python3-venv`, `python3-pip`) | Python 3.10+ (marcar casilla *"Add python.exe to PATH"*) |
+| **Control de Versiones** | Git (`sudo apt install git`) | [Git for Windows](https://git-scm.com/download/win) (Git Bash recomendado) |
+| **Opcional: Motor IA Local** | [Ollama](https://ollama.com) con modelo `llama3:8b` | [Ollama for Windows](https://ollama.com/download/windows) con `llama3:8b` |
+
+> [!IMPORTANT]
+> **En Windows**: Asegúrate de que Docker Desktop esté abierto y con el icono de la ballena en verde antes de ejecutar comandos de Docker. Se recomienda ejecutar las instrucciones en **PowerShell** (como Administrador) o en **Git Bash**.
+
+---
+
+### 3.2 Despliegue Rápido en Una Sola Línea (One-Liner)
+
+#### En Linux / macOS / WSL 2:
 ```bash
-git clone <tu-repositorio> sismowatch
+cp .env.example .env && \
+python3 -m venv .venv && \
+source .venv/bin/activate && \
+pip install --upgrade pip && \
+pip install -r requirements.txt && \
+pytest tests && \
+mkdir -p airflow/logs && chmod -R 777 airflow/logs && \
+docker compose up -d --build
+```
+
+#### En Windows (PowerShell):
+```powershell
+Copy-Item .env.example .env ; `
+python -m venv .venv ; `
+.\.venv\Scripts\Activate.ps1 ; `
+python -m pip install --upgrade pip ; `
+pip install -r requirements.txt ; `
+pytest tests ; `
+New-Item -ItemType Directory -Force -Path airflow/logs ; `
+docker compose up -d --build
+```
+
+---
+
+### 3.3 Paso a Paso Exhaustivo desde Cero
+
+#### Paso 1: Clonar o extraer el proyecto
+Abre tu terminal y ubícate en la raíz del repositorio:
+```bash
+# Vía Git:
+git clone <url-del-repositorio> sismowatch
 cd sismowatch
 
-# Copiar la plantilla de entorno
-cp .env.example .env
+# O si recibiste el archivo comprimido .zip:
+# Extrae el archivo y entra en la carpeta descomprimida
 ```
-> *.env viene preconfigurado con claves seguras autogeneradas (Fernet Key, JWT Secret Key y contraseñas de base de datos).*
 
-### Paso 2: Levantar el ecosistema completo
+---
+
+#### Paso 2: Crear el archivo de variables de entorno (`.env`)
+El repositorio contiene una plantilla segura preconfigurada ([`.env.example`](file:///.env.example)).
+
+- **En Linux / macOS / Git Bash:**
+  ```bash
+  cp .env.example .env
+  ```
+- **En Windows (PowerShell):**
+  ```powershell
+  Copy-Item .env.example .env
+  ```
+- **En Windows (CMD):**
+  ```cmd
+  copy .env.example .env
+  ```
+
+> *.env viene preconfigurado con claves seguras autogeneradas (Fernet Key de Airflow, Secret Key de JWT, contraseñas de usuarios segregados de PostgreSQL y credenciales iniciales `admin` y `viewer`).*
+
+*(Opcional: Si dispones de una API Key de Google Gemini para los reportes diarios con IA generativa, abre `.env` en tu editor y colócala en `GEMINI_API_KEY=AIzaSy...`).*
+
+---
+
+#### Paso 3: Crear y activar el entorno virtual de Python (`.venv`)
+
+- **En Linux / macOS:**
+  ```bash
+  # 1. Crear entorno virtual
+  python3 -m venv .venv
+
+  # 2. Activar entorno virtual
+  source .venv/bin/activate
+  ```
+
+- **En Windows (PowerShell):**
+  ```powershell
+  # 1. Crear entorno virtual
+  python -m venv .venv
+
+  # 2. Permitir ejecución de scripts (si no lo has hecho antes)
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+
+  # 3. Activar entorno virtual
+  .\.venv\Scripts\Activate.ps1
+  ```
+
+- **En Windows (CMD o Git Bash):**
+  ```cmd
+  REM En CMD clásico:
+  python -m venv .venv
+  call .venv\Scripts\activate.bat
+
+  REM En Git Bash:
+  python -m venv .venv
+  source .venv/Scripts/activate
+  ```
+
+*(Sabrás que está activo porque aparecerá `(.venv)` al inicio de tu línea de comandos).*
+
+---
+
+#### Paso 4: Actualizar pip e instalar dependencias locales
+Instala el paquete unificado de dependencias técnicas y de testing definido en [`requirements.txt`](file:///requirements.txt):
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+---
+
+#### Paso 5: Validar el sistema con la suite de pruebas automatizadas (Pytest)
+Antes de construir los contenedores, ejecuta la batería completa de 21 pruebas unitarias e integración para certificar la integridad de los componentes:
+```bash
+pytest tests
+```
+*(Todas las 21 pruebas deben finalizar en estado `PASSED`, certificando la seguridad RBAC, integridad sintáctica de DAGs de Airflow, compuertas de calidad de datos y funciones de transformación GeoJSON).*
+
+---
+
+#### Paso 6: Preparar directorios de logs y permisos
+Apache Airflow requiere una carpeta de logs con permisos de escritura para el contenedor:
+
+- **En Linux / macOS:**
+  ```bash
+  mkdir -p airflow/logs && chmod -R 777 airflow/logs
+  ```
+- **En Windows (PowerShell):**
+  ```powershell
+  New-Item -ItemType Directory -Force -Path airflow/logs
+  ```
+
+---
+
+#### Paso 7 (Opcional): Configurar el Agente de IA Local (Ollama 8B)
+El sistema incluye integración nativa con el modelo open-source `llama3:8b` para responder consultas en lenguaje natural en la pestaña **"Agente IA (Gold)"**:
+
+1. Descarga e instala [Ollama](https://ollama.com).
+2. Descarga el modelo en tu terminal:
+   ```bash
+   ollama pull llama3:8b
+   ```
+3. Verifica que esté activo con `ollama list`.
+> *Si Ollama no está instalado o se encuentra apagado, el backend conmuta automáticamente a un modo analítico determinista basado en los datos certificados de la capa Gold sin interrumpir el servicio.*
+
+---
+
+#### Paso 8: Construir y levantar los contenedores con Docker Compose
+Construye las imágenes personalizadas e inicia todos los servicios orquestados en segundo plano (`-d`):
 ```bash
 docker compose up -d --build
 ```
 
-### Paso 3: Puertos de Acceso a Servicios
-| Servicio | URL Local | Credenciales por Defecto |
-| :--- | :--- | :--- |
-| **Plataforma Web (React)** | [http://localhost:3000](http://localhost:3000) | `admin` / `AdminSismo2026!` (Admin)<br/>`viewer` / `ViewerSismo2026!` (Viewer) |
-| **Backend API (FastAPI Docs)** | [http://localhost:8000/docs](http://localhost:8000/docs) | Autenticación Bearer JWT vía `/auth/login` |
-| **Apache Airflow UI** | [http://localhost:8080](http://localhost:8080) | `admin` / `AdminAirflow2026!` |
-| **PostgreSQL 16 (Host)** | `localhost:5435` | `postgres` / `postgres_master_secret` |
+**Servicios desplegados automáticamente:**
+1. `sismowatch_postgres`: PostgreSQL 16 con esquemas Medallion (`raw`, `staging`, `curated`) y segregación estricta de roles.
+2. `sismowatch_airflow_init`: Ejecuta migraciones de metadata DB y aprovisiona el usuario administrador de Airflow.
+3. `sismowatch_airflow_webserver`: Servidor web e interfaz gráfica de Apache Airflow (:8080).
+4. `sismowatch_airflow_scheduler`: Motor planificador y ejecutor de pipelines TaskFlow.
+5. `sismowatch_api`: Backend FastAPI con autenticación JWT, streaming SSE y endpoints analíticos (:8000).
+6. `sismowatch_web`: Frontend React + Vite con mapas Leaflet, métricas y dashboard en vivo (:3000).
+
+---
+
+#### Paso 9: Verificación de estado y salud del ecosistema
+
+1. **Revisar estado de los contenedores:**
+   ```bash
+   docker compose ps
+   ```
+   *(Todos los contenedores principales deben figurar en estado `Up` o `Up (healthy)`).*
+
+2. **Probar salud de la API (FastAPI):**
+   - Linux / macOS / Git Bash:
+     ```bash
+     curl -s http://localhost:8000/health
+     ```
+   - Windows (PowerShell):
+     ```powershell
+     Invoke-RestMethod -Uri http://localhost:8000/health
+     ```
+   *Respuesta esperada:* `{"status":"healthy","service":"sismowatch_api","version":"1.0.0"}`
+
+3. **Probar estado de Airflow:**
+   - Linux / macOS / Git Bash:
+     ```bash
+     curl -s http://localhost:8080/health
+     ```
+   - Windows (PowerShell):
+     ```powershell
+     Invoke-RestMethod -Uri http://localhost:8080/health
+     ```
+   *Respuesta esperada:* `metadatabase: healthy, scheduler: healthy`
+
+---
+
+### 3.4 Puertos y Credenciales de Acceso a Servicios
+
+| Servicio | URL Local | Credenciales por Defecto | Notas de Acceso |
+| :--- | :--- | :--- | :--- |
+| **Plataforma Web (React)** | [http://localhost:3000](http://localhost:3000) | `admin` / `AdminSismo2026!` (Admin)<br/>`viewer` / `ViewerSismo2026!` (Viewer) | Interfaz unificada de usuario, dashboard, mapa y reportes |
+| **API Backend (FastAPI Docs)** | [http://localhost:8000/docs](http://localhost:8000/docs) | Autenticación Bearer JWT vía `/auth/login` | Documentación interactiva Swagger UI con esquema OpenAPI |
+| **Apache Airflow UI** | [http://localhost:8080](http://localhost:8080) | `admin` / `AdminAirflow2026!` | Monitor de DAGs, ejecuciones TaskFlow y Datasets |
+| **PostgreSQL 16 (Host)** | `localhost:5435` | `postgres` / `postgres_master_secret` | Conexión directa desde DBeaver, pgAdmin o terminal |
+
+---
+
+### 3.5 Comandos de Mantenimiento y Troubleshooting Común
+
+- **Ver logs en tiempo real de un servicio específico:**
+  ```bash
+  docker compose logs -f api
+  docker compose logs -f airflow-scheduler
+  docker compose logs -f web
+  ```
+- **Aplicar cambios tras editar el archivo `.env`:**
+  *(Docker Compose no recarga `.env` con un simple restart; se deben recrear los contenedores)*:
+  ```bash
+  docker compose up -d
+  ```
+- **Reiniciar un servicio específico:**
+  ```bash
+  docker compose restart api
+  ```
+- **Detener el ecosistema completo preservando los datos:**
+  ```bash
+  docker compose down
+  ```
+- **Detener el ecosistema y eliminar volúmenes (Reinicio desde Cero Total):**
+  ```bash
+  docker compose down -v
+  ```
+- **Conflicto de puertos en el host (Puertos 3000, 8000, 8080 o 5435 ocupados):**
+  - En Linux: Identificar y liberar con `sudo ss -tulpn | grep -E ':(5435|8080|8000|3000)\b'`.
+  - En Windows (PowerShell): Identificar con `Get-NetTCPConnection -LocalPort 3000,8000,8080,5435 -ErrorAction SilentlyContinue`.
 
 ---
 
@@ -224,7 +452,15 @@ El DAG `dag_ai_daily_report_and_anomalies` integra dos técnicas avanzadas:
 
 Las 21 pruebas unitarias y de integración corren con un solo comando:
 ```bash
+# Con el entorno virtual activo:
+pytest tests
+
+# O directamente invocando el ejecutable del entorno virtual:
+# En Linux / macOS:
 .venv/bin/pytest tests
+
+# En Windows (PowerShell / CMD):
+.\.venv\Scripts\pytest tests
 ```
 
 ### Resultados de Ejecución:
